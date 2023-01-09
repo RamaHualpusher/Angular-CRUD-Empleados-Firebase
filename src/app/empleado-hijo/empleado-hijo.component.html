@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col" style="font-size: large; font-weight: 500;">
+            <div class="mb-3">
+                <p>{{i+1}}: {{e.nombre}} {{e.apellido}}, {{e.edad}} años. 
+                Cargo: {{e.cargo}}, salario: <span [ngStyle]="{color: e.salario>=1500 ? 'green' : 'red'}">${{e.salario}}</span></p>
+                <a [routerLink]="['actualiza',i]" [queryParams]="{accion:'1'}" style="color: green;">Actualizar</a>
+                <span> | </span>
+                <a [routerLink]="['actualiza',i]" [queryParams]="{accion:'2'}" style="color: red;">Eliminar</a>
+            </div>
+            
+            <app-caracteristicas-empleado (newCaracteristica)="agregarCaracteristica($event)"></app-caracteristicas-empleado>
+            <ul style="list-style: none;">
+                <li *ngFor="let caracteristica of arrayCaracteristicas">{{caracteristica}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

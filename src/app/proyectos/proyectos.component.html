@@ -1,0 +1,34 @@
+<p>proyectos works!</p>
+<div class="container">
+    <h1>{{titulo}}</h1>
+    <form class="form-group row">
+        <div class="form-group row">
+            <label for="nombre">Nombre</label>
+            <input class="form-control" id="nombre" type="text" [(ngModel)]="nombre"
+                placeholder="Ingrese el nombre del empleado" name="nombre">
+        </div>
+        <div class="form-group row">
+            <label for="apellido">Apellido</label>
+            <input class="form-control" id="apellido" type="text" [(ngModel)]="apellido"
+                placeholder="Ingrese el apellido del empleado" name="apellido">
+        </div>
+        <div class="form-group row">
+            <label for="edad">Edad</label>
+            <input class="form-control" id="edad" type="number" [(ngModel)]="edad"
+                placeholder="Ingrese la edad del empleado" name="edad">
+        </div>
+        <div class="form-group row">
+            <label for="cargo">Cargo</label>
+            <input class="form-control" id="cargo" type="text" [(ngModel)]="cargo"
+                placeholder="Ingrese el cargo del empleado" name="cargo">
+        </div>
+        <div class="form-group row">
+            <label for="salario">Salario</label>
+            <input class="form-control" id="salario" type="number" [(ngModel)]="salario"
+                placeholder="Ingrese el salario del empleado" name="salario">
+        </div>
+        <div class="form-group row mt-4">
+            <button class="btn btn-success" (click)="agregarEmpleado()">Agregar</button>
+        </div>
+    </form>
+</div>
