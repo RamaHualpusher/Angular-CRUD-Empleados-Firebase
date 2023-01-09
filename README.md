@@ -1,5 +1,8 @@
 # FormularioDirectivas
 
+URL: https://cursoangular-rh.web.app/
+Las credenciales para inicio de sesión deberán solicirarlas a mi linkedin: https://www.linkedin.com/in/ramirohualpa/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.
 
 ## Development server
